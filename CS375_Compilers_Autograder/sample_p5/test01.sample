@@ -1,0 +1,10 @@
+Symbol table level 1
+ 38522384          pr  TYPE   typ 38522288  lvl  1  siz     8  off     0
+(^ real)
+ 38522896          pi  TYPE   typ 38522800  lvl  1  siz     8  off     0
+(^ integer)
+ 38523312           c  VAR    4 typ 38522288  lvl  1  siz     8  off     0
+(^ real)
+ 38523664           d  VAR    4 typ 38522800  lvl  1  siz     8  off     8
+(^ integer)
+ 38524016           i  VAR    0 typ integer  lvl  1  siz     4  off    16

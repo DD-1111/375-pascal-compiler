@@ -1,0 +1,3 @@
+yacc parse.y
+clang -c -g y.tab.c -Wall
+clang -o parser y.tab.o lex.yy.o printtoken.o pprint.o symtab.o -lm

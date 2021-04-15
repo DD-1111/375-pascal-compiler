@@ -1,0 +1,14 @@
+parse.y: warning: 1 shift/reduce conflict [-Wconflicts-sr]
+parse.y: warning: 75 reduce/reduce conflicts [-Wconflicts-rr]
+parse.y:436:9: warning: implicitly declaring library function 'strcmp' with type 'int (const char *, const char *)' [-Wimplicit-function-declaration]
+    if (strcmp(fn->stringval, "new") == 0) {
+        ^
+parse.y:436:9: note: include the header <string.h> or explicitly provide a declaration for 'strcmp'
+parse.y:442:17: warning: implicitly declaring library function 'strcpy' with type 'char *(char *, const char *)' [-Wimplicit-function-declaration]
+                strcpy(fn->stringval, "writei");
+                ^
+parse.y:442:17: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+parse.y:820:12: warning: unused variable 'range' [-Wunused-variable]
+    SYMBOL range = tok->symtype;
+           ^
+3 warnings generated.

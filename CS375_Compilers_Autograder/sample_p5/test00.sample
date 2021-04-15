@@ -1,0 +1,22 @@
+Symbol table level 1
+ 8074480         red  CONST  typ INTEGER  val  0
+ 8074576      orange  CONST  typ INTEGER  val  1
+ 8074672      yellow  CONST  typ INTEGER  val  2
+ 8074768       green  CONST  typ INTEGER  val  3
+ 8074864        cyan  CONST  typ INTEGER  val  4
+ 8074960        blue  CONST  typ INTEGER  val  5
+ 8075056      indigo  CONST  typ INTEGER  val  6
+ 8075152      violet  CONST  typ INTEGER  val  7
+ 8075248      purple  CONST  typ INTEGER  val  8
+ 8075344     magenta  CONST  typ INTEGER  val  9
+ 8075440        pink  CONST  typ INTEGER  val  10
+ 8075536       brown  CONST  typ INTEGER  val  11
+ 8075632       white  CONST  typ INTEGER  val  12
+ 8075728        gray  CONST  typ INTEGER  val  13
+ 8075824       black  CONST  typ INTEGER  val  14
+ 8076080       color  TYPE   typ 8075984  lvl  1  siz     4  off     0
+  0 ..  14
+ 8076624           c  VAR    0 typ 8075984  lvl  1  siz     4  off     0
+  0 ..  14
+ 8076720           d  VAR    0 typ 8075984  lvl  1  siz     4  off     4
+  0 ..  14

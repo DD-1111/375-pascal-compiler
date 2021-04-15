@@ -1,0 +1,118 @@
+cons
+ token 39250864  ID        output  dtype 9999  link 0
+ token 0  NULL
+cons
+ token 39259328  ID             i  dtype 9999  link 0
+ token 0  NULL
+cons
+ token 39259808  OP            :=  dtype 9999  link 0  operands 39259744
+ token 0  NULL
+makeprogn
+ token 39259680  OP         progn  dtype 9999  link 0  operands 39259808
+ token 39259808  OP            :=  dtype 9999  link 0  operands 39259744
+makeprogn
+ token 39260128  OP         progn  dtype 9999  link 0  operands 39250864
+ token 39250864  ID        output  dtype 9999  link 0
+make prgm
+ token 39260064  OP       program  dtype 9999  link 0  operands 39250736
+Symbol table level 0
+ 39219808        real  BASIC  basicdt   1          siz     8
+ 39219904     integer  BASIC  basicdt   0          siz     4
+ 39220000        char  BASIC  basicdt   2          siz     1
+ 39220096     boolean  BASIC  basicdt   3          siz     4
+ 39220192         exp  knd 5 0  typ 39220288  lvl  0  siz     0  off     0
+(FUNCTION real
+          real)
+ 39220480       trexp  knd 5 0  typ 39220576  lvl  0  siz     0  off     0
+(FUNCTION real
+          real)
+ 39220768         sin  knd 5 0  typ 39220864  lvl  0  siz     0  off     0
+(FUNCTION real
+          real)
+ 39221056         cos  knd 5 0  typ 39221152  lvl  0  siz     0  off     0
+(FUNCTION real
+          real)
+ 39221344       trsin  knd 5 0  typ 39221440  lvl  0  siz     0  off     0
+(FUNCTION real
+          real)
+ 39221632        sqrt  knd 5 0  typ 39221728  lvl  0  siz     0  off     0
+(FUNCTION real
+          real)
+ 39221920       round  knd 5 0  typ 39222016  lvl  0  siz     0  off     0
+(FUNCTION real
+          real)
+ 39222208      iround  knd 5 0  typ 39222304  lvl  0  siz     0  off     0
+(FUNCTION integer
+          real)
+ 39222496         ord  knd 5 0  typ 39222592  lvl  0  siz     0  off     0
+(FUNCTION integer
+          integer)
+ 39222784         new  knd 5 0  typ 39222880  lvl  0  siz     0  off     0
+(FUNCTION integer
+          integer)
+ 39223072       trnew  knd 5 0  typ 39223168  lvl  0  siz     0  off     0
+(FUNCTION integer
+          integer)
+ 39223360       write  knd 5 0  typ 39223456  lvl  0  siz     0  off     0
+(FUNCTION NULL
+          char)
+ 39223648     writeln  knd 5 0  typ 39223744  lvl  0  siz     0  off     0
+(FUNCTION NULL
+          char)
+ 39223936      writef  knd 5 0  typ 39224032  lvl  0  siz     0  off     0
+(FUNCTION NULL
+          real)
+ 39224224    writelnf  knd 5 0  typ 39224320  lvl  0  siz     0  off     0
+(FUNCTION NULL
+          real)
+ 39224512      writei  knd 5 0  typ 39224608  lvl  0  siz     0  off     0
+(FUNCTION NULL
+          integer)
+ 39224800    writelni  knd 5 0  typ 39224896  lvl  0  siz     0  off     0
+(FUNCTION NULL
+          integer)
+ 39225088        read  knd 5 0  typ 39225184  lvl  0  siz     0  off     0
+(FUNCTION NULL
+          NULL)
+ 39225376      readln  knd 5 0  typ 39225472  lvl  0  siz     0  off     0
+(FUNCTION NULL
+          NULL)
+ 39225664         eof  knd 5 0  typ 39225760  lvl  0  siz     0  off     0
+(FUNCTION boolean
+          NULL)
+Symbol table level 1
+ 39259584           i  VAR    0 typ integer  lvl  1  siz     4  off     0
+yyparse result =        0
+ token 39260064  OP       program  dtype 9999  link 0  operands 39250736
+(program graph1
+(progn output)
+(progn (:= i 3)))
+# ---------------- Beginning of Generated Code --------------------
+        .file   "foo"
+        .text
+        .globl graph1
+        .type   graph1, @function
+graph1:
+.LFB0:
+	.cfi_startproc
+	pushq	%rbp              # save base pointer on stack
+	.cfi_def_cfa_offset 16
+	movq	%rsp, %rbp        # move stack pointer to base pointer
+	.cfi_offset 6, -16
+	.cfi_def_cfa_register 6
+        subq	$32, %rsp 	  # make space for this stack frame
+	movq	%rbx, %r9        # save %rbx (callee-saved) in %r9
+# ------------------------- begin Your code -----------------------------
+	movl	$3,%eax         	#  3 -> %eax
+	movl	%eax,-32(%rbp)     	#  %eax -> i
+# ----------------------- begin Epilogue code ---------------------------
+	movq	%r9, %rbx        # restore %rbx (callee-saved) from %r9
+        leave
+        ret
+        .cfi_endproc
+.LFE0:
+        .size   graph1, .-graph1
+# ----------------- end Epilogue; Literal data follows ------------------
+        .section        .rodata
+
+        .ident  "CS 375 Compiler - Fall 2020"
